@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/medicine_background"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <!-- Title for the form -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="@string/Medicine_Donation_Form"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="144dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/medicine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <!-- Donor Name -->
+    <EditText
+        android:id="@+id/donorName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/Donar_Name"
+        android:padding="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <!-- Contact Number -->
+    <EditText
+        android:id="@+id/contactNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/Contact_Number"
+        android:background="@drawable/edit_text_background"
+        android:padding="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/donorName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Email Address -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/Email_Address"
+        android:background="@drawable/edit_text_background"
+        android:padding="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/contactNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Medicine Name -->
+    <EditText
+        android:id="@+id/medicineName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/Medicine_Name"
+        android:background="@drawable/edit_text_background"
+        android:padding="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Medicine Type -->
+    <EditText
+        android:id="@+id/medicineType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Type (e.g., Tablet, Syrup)"
+        android:background="@drawable/edit_text_background"
+        android:padding="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/medicineName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Quantity -->
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/Quantity"
+        android:background="@drawable/edit_text_background"
+        android:padding="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/medicineType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Expiry Date -->
+    <EditText
+        android:id="@+id/expiryDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/Expiry_date"
+        android:background="@drawable/edit_text_background"
+        android:padding="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/quantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Batch Number -->
+    <EditText
+        android:id="@+id/batchNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/Batch_number"
+        android:background="@drawable/edit_text_background"
+        android:padding="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/expiryDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Manufacturer -->
+    <EditText
+        android:id="@+id/manufacturer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/Manufacturer"
+        android:background="@drawable/edit_text_background"
+        android:padding="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/batchNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Storage Requirements -->
+    <EditText
+        android:id="@+id/storageRequirements"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/Storage_Requirements"
+        android:background="@drawable/edit_text_background"
+        android:padding="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/manufacturer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Success message TextView (Initially hidden) -->
+    <TextView
+        android:id="@+id/successMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Form_submitted_successfully"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/submitButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/colorAccent"
+        android:padding="10dp"
+        android:text="@string/Submit_Donation"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/successMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storageRequirements" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

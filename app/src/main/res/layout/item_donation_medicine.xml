@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/donorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Donor Name"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/contactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Number"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/medicineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medicine Name"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/medicineType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medicine Type"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/expiryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expiry Date"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/batchNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Batch Number"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/manufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manufacturer"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/storageRequirements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Storage Requirements"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Donation"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp" />
+</LinearLayout>
