@@ -8,11 +8,11 @@ NGOs can request items and connect with donors
 Donation history tracking for transparency
 Simple and user-friendly design for all age groups
 
-##Technologies Used
+## Technologies Used
 Android Studio (Java, XML)
 Firebase Authentication for secure login
 Cloud Firestore for real-time database
 Clean layout and intuitive interface
 
-🎯Purpose
+## Purpose
 To make it easy for individuals to contribute to society by donating unused items and helping NGOs reach those in need. It promotes a sense of community and care.
